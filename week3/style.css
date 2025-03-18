@@ -1,0 +1,63 @@
+* {
+  color: hotpink;
+}
+
+body {
+  background-color: beige;
+  font-size: 1.1rem;
+}
+
+li {
+  color: purple;
+}
+
+h1 {
+  color: rgb(66, 66, 122);
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Stencil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h3,
+h2 {
+  color: green;
+  font-size: 1.4rem;
+}
+
+p {
+  color: brown;
+  font-weight: bold;
+}
+
+.yellow-color {
+  color: yellow;
+}
+#second-para {
+  color: chocolate;
+}
+
+/* LOOK BACK TO HTML */
+section {
+  text-align: center;
+  border: 1px solid black;
+}
+/* 
+.green-border {
+  border: 3px dashed green;
+} */
+
+/* curly braces { } */
+/* square brackets [] */
+/*parentheses <>/
+/*round brackets () */
+/* colon: */
+/* semi colon : /
+/*syntax - rules of writing */
