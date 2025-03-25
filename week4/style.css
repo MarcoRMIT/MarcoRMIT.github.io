@@ -1,0 +1,42 @@
+body {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+p {
+  border: 1px solid crimson;
+  border-bottom: 3px dashed green;
+  width: 400px;
+  height: 300px;
+  margin-left: 30px;
+  /* use properties such as min-height and max-height instead as required */
+  margin: 0 auto;
+  /* horizontal centering */
+  /* padding-left: 20px;
+  padding-bottom: 30px; */
+  /* padding: 10px; */
+  padding: 20px;
+  margin-bottom: 20px;
+  /* alternate: top right bottom and left, padding: 20px 30px 20px 30px */
+}
+.vcenter {
+  line-height: 230px;
+}
+
+span {
+  color: blueviolet;
+  /* display: block; */
+}
+
+/* .vcenter {
+    line-height: 230px;
+  } */
+/* height 300 padding 20 300-20-20 */
