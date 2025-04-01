@@ -13,9 +13,17 @@ console.log("total is", sum);
 // + for addition as well as joining texts
 // -b for subtraction
 // * for multiplication
-// /
+// / Division
 
-const weather = "Sunny and Bright";
+const weather = "rainy";
+const grade = 75;
+
+if (weather === "Sunny") {
+  console.log("today is sunny weather");
+} else {
+  console.log("too bad no sun today");
+}
+
 const msg = `<h1>Today's wether is ${weather}
 <p> this is so nice to see the sun again </p>
 
@@ -38,6 +46,11 @@ let student1 = "Rohit";
 let student2 = "Roger";
 console.log(student1, student2);
 let studentArray = ["Rohit", "Roger", "Sarah", "Julia", "Tim"];
+
+for (let i = 0; i < studentArray.length; i++) {
+  console.log("Hello", studentArray[i]);
+}
+
 console.log(studentArray[2]);
 
 console.log(myStudentDetails);
