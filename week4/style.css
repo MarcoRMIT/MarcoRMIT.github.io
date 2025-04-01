@@ -13,7 +13,6 @@ h1 {
 
 p {
   border: 1px solid crimson;
-  border-bottom: 3px dashed green;
   width: 400px;
   height: 300px;
   margin-left: 30px;
@@ -28,7 +27,7 @@ p {
   /* alternate: top right bottom and left, padding: 20px 30px 20px 30px */
 }
 .vcenter {
-  line-height: 230px;
+  line-height: 250px;
 }
 
 span {
