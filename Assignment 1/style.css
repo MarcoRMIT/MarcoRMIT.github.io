@@ -1,5 +1,5 @@
 body {
-  background-color: antiquewhite;
+  background-color: ;
 }
 
 h1 {
@@ -9,18 +9,24 @@ h1 {
   font-family: "Big Shoulders Stencil", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-
+  border-style: solid;
+  border-width: 3px;
+  border-color: chocolate;
+  border-radius: 8px;
+  margin: 50px;
   font-weight: 100;
 }
 
-h2 {
-  color: rgb(66, 66, 122);
+p {
+  border-style: solid;
+  border-width: 2px;
+  margin: 50px;
+}
+
+h2,
+h3 {
+  color: rgb(66, 109, 75);
   font-size: 1.5rem;
   font-family: "Big Shoulders Stencil", sans-serif;
   font-style: normal;
-}
-
-section {
-  text-align: middle;
-  border: 2px solid black;
 }
