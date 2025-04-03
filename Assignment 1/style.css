@@ -1,10 +1,22 @@
 body {
-  background-color: cornflowerblue;
+  background-color: #8cabbe;
 }
 
-.navbar {
-  background-color: darkcyan;
-  height: 50px;
+h1 {
+  background-color: #a4bfeb;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 20px;
+  margin: 50px;
+  font-weight: 100;
 }
 
 .box {
@@ -14,7 +26,7 @@ body {
   width: 30%;
   float: inline-start;
   border-radius: 20px;
-  background-color: aquamarine;
+  background-color: beige;
 }
 
 .box2 {
@@ -24,7 +36,7 @@ body {
   width: 30%;
   float: left;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: bisque;
 }
 
 .box3 {
@@ -34,7 +46,7 @@ body {
   width: 30%;
   float: left;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: moccasin;
 }
 
 .box4 {
@@ -44,7 +56,7 @@ body {
   width: 20%;
   float: inline-start;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: moccasin;
 }
 
 .box5 {
@@ -54,7 +66,7 @@ body {
   width: 25%;
   float: left;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: beige;
 }
 
 .box6 {
@@ -64,7 +76,7 @@ body {
   width: 40%;
   float: left;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: bisque;
 }
 
 .box7 {
@@ -74,57 +86,57 @@ body {
   width: 30%;
   float: left;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: bisque;
 }
 
 .box8 {
   border: 1.5px solid;
   padding: 30px;
-  height: auto
+  height: auto;
   width: 20%;
   float: left;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: moccasin;
 }
 
 .box9 {
   border: 1.5px solid;
-  padding: 20;
+  padding: 30px;
   height: auto;
-  width:50%;
+  width: 40%;
   float: left;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: beige;
 }
 
 .box10 {
   border: 1.5px solid;
   padding: 40px;
   height: auto;
-  width: 45%;
+  width: 40%;
   float: left;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: beige;
 }
 
 .box11 {
   border: 1.5px solid;
-  padding: 35px;
+  padding: 20px;
   height: auto;
-  width: 25%;
+  width: 20%;
   float: left;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: bisque;
 }
 
 .box12 {
   border: 1.5px solid;
-  padding: 60px;
+  padding: 30px;
   height: auto;
-  width: 15%;
+  width: 30%;
   float: left;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
+  background-color: moccasin;
 }
 
 .box13 {
@@ -132,26 +144,9 @@ body {
   padding: 30px;
   height: auto;
   width: 30%;
-  float: left;
+  float: inline-start;
   border-radius: 20px;
-  background-color: rgb(255, 242, 127);
-}
-
-h1 {
-  background-color: aqua;
-  color: rgb(129, 78, 126);
-  text-align: center;
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  border-style: solid;
-  border-width: 3px;
-  border-color: chocolate;
-  border-radius: 20px;
-  margin: 50px;
-  font-weight: 100;
+  background-color: beige;
 }
 
 p,
@@ -164,9 +159,9 @@ h2,
 h3 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-style: normal;
+  font-style: italic;
   text-align: center;
-  font-size: small;
+  font-size: normal;
 }
 
 h4 {
