@@ -27,7 +27,7 @@ h1 {
   float: inline-start;
   border-radius: 20px;
   background-color: beige;
-} */
+} * FIRST TRIAL/ 
 
 /* Box Styling */
 .box {
@@ -37,7 +37,7 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
+
   background-color: beige;
 }
 
@@ -49,7 +49,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: bisque;
 }
 
@@ -71,7 +70,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: moccasin;
 }
 /* .box3 {
@@ -91,7 +89,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: moccasin;
 }
 
@@ -112,7 +109,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: beige;
 }
 /* .box5 {
@@ -132,7 +128,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: bisque;
 }
 
@@ -153,7 +148,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: bisque;
 }
 /* .box7 {
@@ -173,7 +167,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: moccasin;
 }
 /* .box8 {
@@ -193,7 +186,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: beige;
 }
 
@@ -214,7 +206,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: beige;
 }
 /* .box10 {
@@ -234,7 +225,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: bisque;
 }
 /* .box11 {
@@ -254,7 +244,6 @@ h1 {
   min-width: 200px;
   width: 30%;
   float: left;
-  text-align: center;
   background-color: moccasin;
 }
 /* .box12 {
