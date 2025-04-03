@@ -19,7 +19,7 @@ h1 {
   font-weight: 100;
 }
 
-.box {
+/* .box {
   border: 1.5px solid;
   padding: 40px;
   height: auto;
@@ -27,9 +27,33 @@ h1 {
   float: inline-start;
   border-radius: 20px;
   background-color: beige;
+} */
+
+/* Box Styling */
+.box {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: beige;
 }
 
+/* Box Styling */
 .box2 {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: bisque;
+}
+
+/* .box2 {
   border: 1.5px solid;
   padding: 30px;
   height: auto;
@@ -37,9 +61,20 @@ h1 {
   float: left;
   border-radius: 20px;
   background-color: bisque;
-}
+} */
 
+/* Box Styling */
 .box3 {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: moccasin;
+}
+/* .box3 {
   border: 1.5px solid;
   padding: 20px;
   height: auto;
@@ -47,9 +82,20 @@ h1 {
   float: left;
   border-radius: 20px;
   background-color: moccasin;
-}
+} */
 
 .box4 {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: moccasin;
+}
+
+/* .box4 {
   border: 1.5px solid;
   padding: 30px;
   height: auto;
@@ -57,19 +103,40 @@ h1 {
   float: inline-start;
   border-radius: 20px;
   background-color: moccasin;
-}
+} */
 
 .box5 {
-  border: 1.5px solid;
-  padding: 35px;
-  height: auto;
-  width: 25%;
-  float: left;
+  border: 1.5px solid black;
   border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
   background-color: beige;
 }
+/* .box5 {
+  border: 1.5px solid;
+  padding: 20px;
+  height: auto;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: beige;
+} */
 
 .box6 {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: bisque;
+}
+
+/* .box6 {
   border: 1.5px solid;
   padding: 70px;
   height: auto;
@@ -77,9 +144,19 @@ h1 {
   float: left;
   border-radius: 20px;
   background-color: bisque;
-}
+} */
 
 .box7 {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: bisque;
+}
+/* .box7 {
   border: 1.5px solid;
   padding: 30px;
   height: auto;
@@ -87,9 +164,19 @@ h1 {
   float: left;
   border-radius: 20px;
   background-color: bisque;
-}
+} */
 
 .box8 {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: moccasin;
+}
+/* .box8 {
   border: 1.5px solid;
   padding: 30px;
   height: auto;
@@ -97,9 +184,20 @@ h1 {
   float: left;
   border-radius: 20px;
   background-color: moccasin;
-}
+} */
 
 .box9 {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: beige;
+}
+
+/* .box9 {
   border: 1.5px solid;
   padding: 30px;
   height: auto;
@@ -107,9 +205,19 @@ h1 {
   float: left;
   border-radius: 20px;
   background-color: beige;
-}
+} */
 
 .box10 {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: beige;
+}
+/* .box10 {
   border: 1.5px solid;
   padding: 40px;
   height: auto;
@@ -117,9 +225,19 @@ h1 {
   float: left;
   border-radius: 20px;
   background-color: beige;
-}
+} */
 
 .box11 {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: bisque;
+}
+/* .box11 {
   border: 1.5px solid;
   padding: 20px;
   height: auto;
@@ -127,9 +245,19 @@ h1 {
   float: left;
   border-radius: 20px;
   background-color: bisque;
-}
+} */
 
 .box12 {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: moccasin;
+}
+/* .box12 {
   border: 1.5px solid;
   padding: 30px;
   height: auto;
@@ -137,8 +265,18 @@ h1 {
   float: left;
   border-radius: 20px;
   background-color: moccasin;
-}
+} */
 
+/* .box {
+  border: 1.5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: beige;
+} */
 .box13 {
   border: 1.5px solid;
   padding: 30px;
