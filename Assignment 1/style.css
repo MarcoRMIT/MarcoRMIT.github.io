@@ -9,10 +9,10 @@ body {
 
 .box {
   border: 1.5px solid;
-  padding: 30px;
+  padding: 40px;
   height: auto;
-  width: 60%;
-  float: left;
+  width: 30%;
+  float: inline-start;
   border-radius: 20px;
   background-color: aquamarine;
 }
@@ -21,7 +21,117 @@ body {
   border: 1.5px solid;
   padding: 30px;
   height: auto;
-  width: 60%;
+  width: 30%;
+  float: left;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box3 {
+  border: 1.5px solid;
+  padding: 20px;
+  height: auto;
+  width: 30%;
+  float: left;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box4 {
+  border: 1.5px solid;
+  padding: 30px;
+  height: auto;
+  width: 20%;
+  float: inline-start;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box5 {
+  border: 1.5px solid;
+  padding: 35px;
+  height: auto;
+  width: 25%;
+  float: left;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box6 {
+  border: 1.5px solid;
+  padding: 70px;
+  height: auto;
+  width: 40%;
+  float: left;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box7 {
+  border: 1.5px solid;
+  padding: 30px;
+  height: auto;
+  width: 30%;
+  float: left;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box8 {
+  border: 1.5px solid;
+  padding: 30px;
+  height: auto
+  width: 20%;
+  float: left;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box9 {
+  border: 1.5px solid;
+  padding: 20;
+  height: auto;
+  width:50%;
+  float: left;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box10 {
+  border: 1.5px solid;
+  padding: 40px;
+  height: auto;
+  width: 45%;
+  float: left;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box11 {
+  border: 1.5px solid;
+  padding: 35px;
+  height: auto;
+  width: 25%;
+  float: left;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box12 {
+  border: 1.5px solid;
+  padding: 60px;
+  height: auto;
+  width: 15%;
+  float: left;
+  border-radius: 20px;
+  background-color: rgb(255, 242, 127);
+}
+
+.box13 {
+  border: 1.5px solid;
+  padding: 30px;
+  height: auto;
+  width: 30%;
   float: left;
   border-radius: 20px;
   background-color: rgb(255, 242, 127);
