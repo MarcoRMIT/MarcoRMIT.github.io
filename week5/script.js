@@ -1,77 +1,101 @@
-// string variables = use quotes
-let Myname = "Marco";
-let myID = "s4081354";
-let myNewName = "Melbourne";
-let myCity = "Jakarta";
+let a = 100;
+let b = 25;
 
-// number variables
-let num = 10;
-let num2 = parseInt("20");
-let sum = num + num2;
-console.log("total is", sum);
+function add(val1, val2) {
+  let sum = val1 + val2;
+  console.log(sum);
+}
+add(10, 20);
+add(23, 34);
 
-// + for addition as well as joining texts
-// -b for subtraction
-// * for multiplication
-// / Division
-
-const weather = "rainy";
-const grade = 75;
-
-if (weather === "Sunny") {
-  console.log("today is sunny weather");
-} else {
-  console.log("too bad no sun today");
+function whatIsMyGrade(marks) {
+  if (marks < 40) {
+    console.log("sorry you failed");
+  } else if (marks > 80) {
+    console.log;
+  }
 }
 
-const msg = `<h1>Today's wether is ${weather}
-<p> this is so nice to see the sun again </p>
+// console.log (c)
 
-</h1>`;
-console.log(msg);
+// a = 23;
+// b = 17;
+// c = a + b;
 
-//boolean variables - true or false
-let isThisEvening = false;
-let isThisRMIT = true;
+// // string variables = use quotes
+// let Myname = "Marco";
+// let myID = "s4081354";
+// let myNewName = "Melbourne";
+// let myCity = "Jakarta";
 
-//object variables {}
-const myStudentDetails = {
-  name: "Marco",
-  id: 1234,
-  hometown: "Melbourne",
-};
+// // number variables
+// let num = 10;
+// let num2 = parseInt("20");
+// let sum = num + num2;
+// console.log("total is", sum);
 
-let array = [2, 4, 6, 8, 10];
-let student1 = "Rohit";
-let student2 = "Roger";
-console.log(student1, student2);
-let studentArray = ["Rohit", "Roger", "Sarah", "Julia", "Tim"];
+// // + for addition as well as joining texts
+// // -b for subtraction
+// // * for multiplication
+// // / Division
 
-for (let i = 0; i < studentArray.length; i++) {
-  console.log("Hello", studentArray[i]);
-}
+// const weather = "rainy";
+// const grade = 75;
 
-console.log(studentArray[2]);
+// if (weather === "Sunny") {
+//   console.log("today is sunny weather");
+// } else {
+//   console.log("too bad no sun today");
+// }
 
-console.log(myStudentDetails);
-console.log("my hometown is", myStudentDetails.hometown);
+// const msg = `<h1>Today's wether is ${weather}
+// <p> this is so nice to see the sun again </p>
 
-console.log("Hi");
-console.log("How are you buddy?");
+// </h1>`;
+// console.log(msg);
 
-// I am declaring a variable called myName to contain my name
-console.log("Hi, I am", Myname);
-console.log("Hi,, my student id is", myID);
-Myname = "abcd";
-console.log("Hi, I am", Myname);
-//let myNewName = prompt("What is your name");
-console.log("Hello", myNewName);
-console.log("Hello", myNewName, myCity);
+// //boolean variables - true or false
+// let isThisEvening = false;
+// let isThisRMIT = true;
 
-// if you know the value is not going to change, define it using const
-// or else use let
-let a = 30;
-{
-  let a = 10;
-  console.log("Hello", a);
-}
+// //object variables {}
+// const myStudentDetails = {
+//   name: "Marco",
+//   id: 1234,
+//   hometown: "Melbourne",
+// };
+
+// let array = [2, 4, 6, 8, 10];
+// let student1 = "Rohit";
+// let student2 = "Roger";
+// console.log(student1, student2);
+// let studentArray = ["Rohit", "Roger", "Sarah", "Julia", "Tim"];
+
+// for (let i = 0; i < studentArray.length; i++) {
+//   console.log("Hello", studentArray[i]);
+// }
+
+// console.log(studentArray[2]);
+
+// console.log(myStudentDetails);
+// console.log("my hometown is", myStudentDetails.hometown);
+
+// console.log("Hi");
+// console.log("How are you buddy?");
+
+// // I am declaring a variable called myName to contain my name
+// console.log("Hi, I am", Myname);
+// console.log("Hi,, my student id is", myID);
+// Myname = "abcd";
+// console.log("Hi, I am", Myname);
+// //let myNewName = prompt("What is your name");
+// console.log("Hello", myNewName);
+// console.log("Hello", myNewName, myCity);
+
+// // if you know the value is not going to change, define it using const
+// // or else use let
+// let a = 30;
+// {
+//   let a = 10;
+//   console.log("Hello", a);
+// }
