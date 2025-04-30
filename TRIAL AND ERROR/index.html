@@ -1,53 +1,50 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>MDN HTML lesson</title>
+    <title>Calm Blue Media Player</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- skibidi sigma I think imo -->
+    <header class="player-header">Calm Blue Media Player</header>
 
-    <!-- 4 heading levels -->
-    <h1>My main title</h1>
-    <h2>My top level heading</h2>
-    <h3>My subheading</h3>
-    <h4>My sub-subheading</h4>
+    <main class="main-screen">
+      <video src="stardust.mp4" id="my-video" controls></video>
+    </main>
 
-    <p class="editor's note">my cat is <strong> very </strong> gay</p>
-    <p>At Mozilla, we're a global community of</p>
+    <section class="playlist">
+      <button class="double-border" data-src="stardust.mp4">Stardust</button>
+      <button class="double-border" data-src="zenscape.mp4">Zenscape</button>
+      <button class="double-border" data-src="musicvideo.mp4">
+        Music Video
+      </button>
+    </section>
 
-    <ul>
-      <li><strong>technologists,</strong></li>
-      <li>thinkers,</li>
-      <li>builders</li>
-    </ul>
+    <section class="controls">
+      <button id="play-pause-button" class="double-border">
+        <img src="play--v2.png" alt="" />
+      </button>
+      <button id="mute-unmute-button" class="double-border">
+        <img src="" alt="" />
+      </button>
+      <button id="fast-forward-button" class="double-border">
+        <img src="fast-forward.png" alt="" />
+      </button>
 
-    <!-- Paragraph describing the importance of Web world  -->
-    <p>
-      working together to keep the internet alive and accesible, so people
-      worldwide can be informed contributors and creators of the web. We believe
-      that this act of human collaboration across an open platform is essential
-      to individual growth and our collective future.
-    </p>
+      <div id="progress-bar-container">
+        <span id="progress-bar"></span>
+      </div>
 
-    <img src="Modzillafirefoxlogo.jpg" alt="my test image" height="180" />
+      <button id="fullscreen-button" class="double-border">
+        <img src="full-screen--v1.png" alt="" />
+      </button>
+      <button id="heart-button" class="double-border">♥︎</button>
+      <div id="likes">0</div>
+    </section>
   </body>
 </html>
-
-<p>
-  read the
-  <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a>
-  to learn even more about the values and principles that guide the pursuit of
-  our mission.
-</p>
-
-<p>
-  THIS IS A TUTORIAL MARCO FOLLOWED BY
-  <a
-    href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content"
-    >mdn webdocs</a
-  >
-  I <strong> highly recommend </strong> this simple HTML tutorial
-</p>

@@ -1,0 +1,104 @@
+/* styles.css */
+:root {
+  --bg: #0a1325;
+  --fg: #d0e1f9;
+  --accent: #3a506b;
+  --accent-light: #5bc0be;
+  --border: #1f2a44;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+.player-header {
+  font-size: 1.5rem;
+  padding: 1rem;
+  background: var(--accent);
+  width: 100%;
+  text-align: center;
+}
+
+.main-screen video {
+  max-width: 90vw;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+}
+
+.playlist,
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.double-border {
+  padding: 0.5rem 1rem;
+  background: var(--bg);
+  color: var(--fg);
+  border: 3px double var(--accent);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.double-border:hover {
+  background: var(--accent-light);
+}
+
+#progress-bar-container {
+  width: 200px;
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#progress-bar {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--accent-light);
+}
+
+#likes {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+/* reset.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
