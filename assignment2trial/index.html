@@ -4,31 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LunaMarc</title>
-    <!-- Player name inspo: "Luna" means Moon, which reflects a night-focused
-    aesthetic. Marco is my name :p. My vision is to create a media music player
-    specifically designed for students or anyone who studies and works at night.
-    It's made specifically for night owls like me (those who are most productive
-    at night after dark), or for people who need to work through the night and
-    stay up late to meet deadlines! That is why LunaMarc is created!! -->
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="reset.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="player-container">
+    <div class="container">
       <div class="top-bar">
-        <span class="back-button">✔</span>
+        <span class="back-button">close</span>
         <span class="playlist-name">Jazz Classics</span>
       </div>
 
       <div class="song-info">
-        <h1 class="song-name">Song Name</h1>
+        <h1 class="song-name">Song Name X</h1>
         <p class="artist-name">Artist Name</p>
       </div>
 
       <div class="album-art-container">
         <div class="album-cover">
-          <p>Album Cover</p>
+          <img src="BANANACATMAININSPO.png" alt="albumcover1" />
         </div>
       </div>
 
@@ -38,6 +33,15 @@
         <button class="control-btn" id="next">⏭</button>
         <button class="control-btn" id="like">♡</button>
       </div>
+    </div>
+
+    <div class="playlist-container">
+      <h2 class="list-title">Playlist</h2>
+      <ul class="song-list">
+        <li class="song-item">Song 1 - Artist a</li>
+        <li class="song-item">Song 2 - Artist b</li>
+        <li class="song-item">Song 3 - Artist c</li>
+      </ul>
     </div>
   </body>
 </html>
