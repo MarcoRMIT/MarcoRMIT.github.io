@@ -52,7 +52,7 @@ body {
 
 .playlist-name {
   font-style: italic;
-  font-size: 13px;
+  font-size: 17px;
   color: #ffffff;
 }
 
@@ -102,7 +102,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #eee;
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -132,6 +131,9 @@ body {
   transition: transform 2s ease;
 }
 
+.sound {
+  font-size: 20px;
+}
 .control-btn:hover {
   transform: scale(1.2);
 }
@@ -147,6 +149,7 @@ body {
   border-radius: 4px;
   position: relative;
   width: 100%;
+  transition: width 0.3s ease;
 }
 
 .progress {

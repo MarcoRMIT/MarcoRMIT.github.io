@@ -7,10 +7,8 @@ playPauseBtn.addEventListener("click", () => {
   isPlaying = !isPlaying;
 
   if (isPlaying) {
-    playPauseBtn.textContent = "⏸"; // Pause icon
-    // Here you would trigger actual audio play logic
+    playPauseBtn.textContent = "⏸";
   } else {
-    playPauseBtn.textContent = "▶"; // Play icon
-    // Here you would trigger audio pause logic
+    playPauseBtn.textContent = "▶";
   }
 });
