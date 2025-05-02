@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start; /* Changed to flex-start */
   width: 100%;
   max-width: 800px;
   margin-top: 20px;
@@ -23,6 +23,7 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 25px;
+  box-shadow: 8px 8px 20px rgba(39, 36, 34, 0.555);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,18 +42,17 @@ body {
 }
 
 .playlist-container {
-  background-color: rgba(157, 118, 175, 0.144);
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 25px;
-  box-shadow: 8px 8px 20px rgba(77, 66, 58, 0.678);
-  width: 50%;
+  box-shadow: 8px 8px 20px rgba(39, 36, 34, 0.555);
+  width: 45%;
   max-width: 350px;
-  height: fit-content;
 }
 
 .playlist-name {
   font-style: italic;
-  font-size: 16px;
+  font-size: 13px;
   color: #ffffff;
 }
 
@@ -64,9 +64,8 @@ body {
   color: #ccc;
 }
 
-.LunaMarctitle {
+.lunamarc {
   font-size: 20px;
-  font-stretch: condensed;
 }
 
 .song-info {
@@ -87,7 +86,7 @@ body {
 
 .album-art-container {
   width: 75%;
-  max-width: 700px;
+  max-width: 300px;
   height: auto;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
@@ -103,6 +102,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #eee;
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -127,6 +127,7 @@ body {
 
 .control-btn {
   font-size: 40px;
+  color: white;
   color: white;
   transition: transform 2s ease;
 }
@@ -191,5 +192,5 @@ body {
 
 .song-item:hover {
   background-color: rgba(255, 255, 255, 0.05);
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
