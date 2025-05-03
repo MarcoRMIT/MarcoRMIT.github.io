@@ -124,6 +124,10 @@ body {
   width: 100%;
 }
 
+.Sliding-text {
+  color: rgb(252, 243, 246);
+  padding: 10px;
+}
 .control-btn {
   font-size: 40px;
   color: white;
