@@ -107,6 +107,7 @@ body {
   background-position: center;
   aspect-ratio: 1/1;
   overflow: hidden;
+  box-shadow: 0 2px 20px rgba(228, 222, 217, 0.603);
 }
 
 .album-cover img {
@@ -131,6 +132,7 @@ body {
 .Sliding-text {
   color: rgb(252, 243, 246);
   padding: 10px;
+  font-style: italic;
 }
 .control-btn {
   font-size: 40px;
