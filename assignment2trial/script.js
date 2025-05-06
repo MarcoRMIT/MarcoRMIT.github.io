@@ -2,6 +2,9 @@ const audio = document.getElementById("audio-player");
 const playPauseBtn = document.getElementById("play-pause");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
+// const soundBtn = document.getElementById("control-btn-sound");
+const soundBtn = document.querySelector(".control-btn-sound");
+
 const songNameEl = document.querySelector(".song-name");
 const artistNameEl = document.querySelector(".artist-name");
 const albumCoverImg = document.querySelector(".album-cover img");
@@ -9,6 +12,7 @@ const progressBar = document.querySelector(".progress-bar");
 const progress = document.querySelector(".progress");
 
 let isPlaying = false;
+let isMuted = false; // Mute state
 
 // Store the playlist items
 const songButtons = document.querySelectorAll(".song-item button");
@@ -69,4 +73,21 @@ nextBtn.addEventListener("click", () => {
     currentSongIndex++; // Go to the next song
   }
   loadSong(currentSongIndex);
+});
+
+// Mute/Unmute functionality
+soundBtn.addEventListener("click", () => {
+  const audio = document.getElementById("audio-player");
+  const soundIcon = soundBtn.querySelector("img");
+
+  isMuted = !isMuted;
+  audio.muted = isMuted;
+
+  if (isMuted) {
+    soundIcon.src = "icons8-no-audio-30.png"; // Mute icon
+    soundIcon.alt = "Muted";
+  } else {
+    soundIcon.src = "icons8-audio-30.png"; // Volume icon
+    soundIcon.alt = "Unmuted";
+  }
 });
