@@ -29,11 +29,9 @@
         </div>
         <div class="progress-container">
           <div class="progress-bar">
-            <div class="progress"></div>
-          </div>
-          <div class="time-container">
-            <span class="current-time">0:00</span>
-            <span class="total-time">3:45</span>
+            <span id="progress-bar-fill"></span>
+
+            <!-- <div class="progress"></div> -->
           </div>
         </div>
         <div class="controls">
@@ -74,7 +72,7 @@
 
           <li class="song-item">
             <button
-              data-src="songs/let-down.mp3"
+              data-src="https://www.dropbox.com/scl/fi/dbsacmubiwrcyx0h5qcmv/let-down-final.wav?rlkey=u43glnb0dyhgmouyjhv6gw19w&st=afl7h4oa&raw=1"
               data-cover="https://i1.sndcdn.com/artworks-lJKAoVANAIli1x4i-udF0GQ-t1080x1080.png"
               data-title="Let Down - Radiohead (cover)"
               data-artist="Jessica Adellene"
@@ -85,7 +83,7 @@
 
           <li class="song-item">
             <button
-              data-src="songs/Double-Rainbow.mp3"
+              data-src="https://www.dropbox.com/scl/fi/2b3jzv86g1vupmbd5fpk7/Double-Rainbow-chosic.com_.mp3?rlkey=pmr45y15xfwcdbqobylrco5ak&st=5eh6btfx&raw=1"
               data-cover="https://ehotelier.com/wp-content/uploads/sites/6/2021/01/20210111-Wyndham-Destinations-rebrands-Travel-Leisure.jpg"
               data-title="Double-Rainbow"
               data-artist="Purrple Cat"
@@ -96,9 +94,9 @@
 
           <li class="song-item">
             <button
-              data-src="songs/Morning-Routine"
+              data-src="https://www.dropbox.com/scl/fi/pj58lh7ez630kecl4yd1h/Morning-Routine-Lofi-Study-Music-chosic.com.mp3?rlkey=y14cn0myu5mh0w3g8zh8xz249&st=89n83lbx&raw=1"
               data-cover="https://i1.sndcdn.com/artworks-000493361583-ssjqh9-t1080x1080.jpg"
-              data-title="Morning-Routine"
+              data-title="Morning Routine"
               data-artist="Ghostrifter"
             >
               Morning Routine - Ghostrifter
@@ -107,7 +105,7 @@
 
           <li class="song-item">
             <button
-              data-src="songs/Reverie"
+              data-src="https://www.dropbox.com/scl/fi/1ms7bsxgvasud2xytuoiw/WhatsApp-Audio-2025-05-06-at-14.55.37.mpeg?rlkey=oiax6oe98rk283r92euwz4aj1&st=f9v2s316&raw=1"
               data-cover="https://www.shazam.com/mkimage/image/thumb/Music211/v4/10/5a/16/105a1621-e19f-4f30-cf78-9428a5c2c500/8994945022598.jpg/255x255bb-60.webp"
               data-title="Reverie"
               data-artist="Aruna Dawn"
@@ -118,13 +116,15 @@
 
           <li class="song-item">
             <button
-              data-src="songs/Transendence"
+              data-src="https://www.dropbox.com/scl/fi/6qxpjkxvpswebmwqrxnbn/Transcendence-chosic.com_.mp3?rlkey=bhjyy8igwogyda71k5or0ad9h&st=72rnv5y3&raw=1"
               data-cover="https://i1.sndcdn.com/artworks-EqEDjJdtZey3IZ0I-tzHWLQ-t1080x1080.png"
-              data-title="Transendence"
+              data-title="Transcendence"
               data-artist="Alexander Nakarada"
             >
               Transendence - Alexander Nakarada
             </button>
+
+            <!-- Turns out Dropbox links must end in ?raw=1 -->
           </li>
         </ul>
 
@@ -143,6 +143,6 @@
       </div>
     </div>
 
-    <audio id="audio-player" src=""></audio>
+    <audio id="audio-player"></audio>
   </body>
 </html>
