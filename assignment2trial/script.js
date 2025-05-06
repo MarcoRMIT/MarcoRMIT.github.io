@@ -45,6 +45,10 @@ function loadSong(index) {
   audio.play();
   playPauseBtn.querySelector("img").src = "icons8-pause-30.png";
   isPlaying = true;
+
+  // Reset likes when loading a new song
+  likes = 0;
+  likesContainer.textContent = likes;
 }
 
 // Handle song item clicks
@@ -54,6 +58,19 @@ songButtons.forEach((btn, index) => {
     loadSong(currentSongIndex);
   });
 });
+
+const heartButton = document.querySelector("#heart-button");
+console.log(heartButton);
+
+heartButton.addEventListener("click", updateLikes);
+
+const likesContainer = document.querySelector("#likes");
+let likes = 0;
+
+function updateLikes() {
+  likes++;
+  likesContainer.textContent = likes;
+}
 
 // Prev button functionality
 prevBtn.addEventListener("click", () => {
