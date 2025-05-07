@@ -3,42 +3,166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LunaMarc</title>
+    <title>LunaMar☪️</title>
+
     <!-- Player name inspo: "Luna" means Moon, which reflects a night-focused
     aesthetic. Marco is my name :p. My vision is to create a media music player
     specifically designed for students or anyone who studies and works at night.
     It's made specifically for night owls like me (those who are most productive
     at night after dark), or for people who need to work through the night and
     stay up late to meet deadlines! That is why LunaMarc is created!! -->
-
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="reset.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="player-container">
-      <div class="top-bar">
-        <span class="back-button">backbutton</span>
-        <span class="playlist-name">Jazz Classics</span>
-      </div>
+    <div class="main-container">
+      <div class="player-container">
+        <div class="top-bar">
+          <!-- app name + playlist title -->
+          <span class="lunamarc">LunaMar☪️</span>
+          <span class="playlist-name">lofi music</span>
+        </div>
+        <div class="album-art-container">
+          <div class="album-cover">
+            <img
+              src="https://i1.sndcdn.com/artworks-lJKAoVANAIli1x4i-udF0GQ-t1080x1080.png"
+              alt="albumcover1"
+            />
+          </div>
+        </div>
+        <div class="song-info">
+          <!-- current song name and artist -->
+          <h1 class="song-name">Let Down - Radiohead (cover)</h1>
+          <p class="artist-name">Jessica Adellene</p>
+        </div>
+        <!-- Progress bar (visual only, for now) -->
 
-      <div class="song-info">
-        <h1 class="song-name">Song Name</h1>
-        <p class="artist-name">Artist Name</p>
-      </div>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <span id="progress-bar-fill"></span>
 
-      <div class="album-art-container">
-        <div class="album-cover">
-          <p>Album Cover</p>
+            <!-- <div class="progress"></div> -->
+          </div>
         </div>
 
+        <!-- Control buttons (sound, skip, play/pause, like) -->
         <div class="controls">
-          <button class="control-btn" id="previous">prev</button>
-          <button class="control-btn" id="play-pause">playpause</button>
-          <button class="control-btn" id="next">next</button>
-          <button class="control-btn" id="like">like</button>
+          <button class="control-btn-sound">
+            <img src="icons8-audio-30.png" alt="icons8-audio-30" />
+          </button>
+          <button class="control-btn" id="prev">
+            <img
+              src="icons8-skip-to-start-24.png"
+              alt="icons8-skip-to-start-24"
+            />
+          </button>
+          <button class="control-btn" id="play-pause">
+            <img src="icons8-play-30.png" alt="icons8-play-30" />
+          </button>
+          <button class="control-btn" id="next">
+            <img src="icons8-end-24.png" alt="icons8-end-24" />
+          </button>
+          <button class="control-btn" id="heart-button">
+            <img src="icons8-heart-48.png" alt="icons8-heart-48" />
+          </button>
+        </div>
+        <div id="likes-container">
+          <span id="likes">0</span>
+        </div>
+      </div>
+
+      <!-- Playlist section for song selection list -->
+      <div class="playlist-container">
+        <h2 class="list-title">Lofi 4 chill</h2>
+        <ul class="song-list">
+          <!-- <li class="song-item">
+            <button 
+              data-src="songs/let-down.mp3" 
+              data-cover="https://i1.sndcdn.com/artworks-lJKAoVANAIli1x4i-udF0GQ-t1080x1080.png"
+              data-title="Let Down - Radiohead (cover)" 
+              data-artist="Jessica Adellene">
+              Let Down - Radiohead (cover) - Jessica Adellene
+            </button>
+          </li>
+          THIS WAS FOR PRACTICING ONLY 
+           -->
+
+          <li class="song-item">
+            <button
+              data-src="https://www.dropbox.com/scl/fi/dbsacmubiwrcyx0h5qcmv/let-down-final.wav?rlkey=u43glnb0dyhgmouyjhv6gw19w&st=afl7h4oa&raw=1"
+              data-cover="https://i1.sndcdn.com/artworks-lJKAoVANAIli1x4i-udF0GQ-t1080x1080.png"
+              data-title="Let Down - Radiohead (cover)"
+              data-artist="Jessica Adellene"
+            >
+              Let Down - Radiohead (cover) - Jessica Adellene
+            </button>
+          </li>
+
+          <li class="song-item">
+            <button
+              data-src="https://www.dropbox.com/scl/fi/2b3jzv86g1vupmbd5fpk7/Double-Rainbow-chosic.com_.mp3?rlkey=pmr45y15xfwcdbqobylrco5ak&st=5eh6btfx&raw=1"
+              data-cover="https://ehotelier.com/wp-content/uploads/sites/6/2021/01/20210111-Wyndham-Destinations-rebrands-Travel-Leisure.jpg"
+              data-title="Double-Rainbow"
+              data-artist="Purrple Cat"
+            >
+              Double Rainbow - Purrple Cat
+            </button>
+          </li>
+
+          <li class="song-item">
+            <button
+              data-src="https://www.dropbox.com/scl/fi/pj58lh7ez630kecl4yd1h/Morning-Routine-Lofi-Study-Music-chosic.com.mp3?rlkey=y14cn0myu5mh0w3g8zh8xz249&st=89n83lbx&raw=1"
+              data-cover="https://i1.sndcdn.com/artworks-000493361583-ssjqh9-t1080x1080.jpg"
+              data-title="Morning Routine"
+              data-artist="Ghostrifter"
+            >
+              Morning Routine - Ghostrifter
+            </button>
+          </li>
+
+          <li class="song-item">
+            <button
+              data-src="https://www.dropbox.com/scl/fi/1ms7bsxgvasud2xytuoiw/WhatsApp-Audio-2025-05-06-at-14.55.37.mpeg?rlkey=oiax6oe98rk283r92euwz4aj1&st=f9v2s316&raw=1"
+              data-cover="https://www.shazam.com/mkimage/image/thumb/Music211/v4/10/5a/16/105a1621-e19f-4f30-cf78-9428a5c2c500/8994945022598.jpg/255x255bb-60.webp"
+              data-title="Reverie"
+              data-artist="Aruna Dawn"
+            >
+              Reverie - Aruna Dawn
+            </button>
+          </li>
+
+          <li class="song-item">
+            <button
+              data-src="https://www.dropbox.com/scl/fi/6qxpjkxvpswebmwqrxnbn/Transcendence-chosic.com_.mp3?rlkey=bhjyy8igwogyda71k5or0ad9h&st=72rnv5y3&raw=1"
+              data-cover="https://i1.sndcdn.com/artworks-EqEDjJdtZey3IZ0I-tzHWLQ-t1080x1080.png"
+              data-title="Transcendence"
+              data-artist="Alexander Nakarada"
+            >
+              Transendence - Alexander Nakarada
+            </button>
+
+            <!-- Turns out Dropbox links must end in ?raw=1 -->
+          </li>
+        </ul>
+
+        <!-- Explanation of each data attribute used in songs above
+             data-src: MP3 file link
+             data-cover: Album cover image
+             data-title: Song name
+             data-artist: Artist's name -->
+
+        <div class="Sliding-text">
+          <marquee behavior="scroll" direction="left">
+            I'm so Proud of you. I Believe in you. You are Dedicated. You are
+            Strong. You are Amazing. Keep Going Buddy!
+          </marquee>
         </div>
       </div>
     </div>
+    <!-- Motivational scrolling message for late-night users -->
+
+    <audio id="audio-player"></audio>
   </body>
+  <!-- Hidden audio element that actually plays the music -->
 </html>
