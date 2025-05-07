@@ -100,6 +100,9 @@ soundBtn.addEventListener("click", () => {
   isMuted = !isMuted;
   audio.muted = isMuted;
 
+  // ismuted = !isMuted;
+  // adiuio.muted = isMuted;
+
   if (isMuted) {
     soundIcon.src = "icons8-no-audio-30.png"; // Mute icon
     soundIcon.alt = "Muted";
