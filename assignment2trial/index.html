@@ -45,6 +45,8 @@
             <!-- <div class="progress"></div> -->
           </div>
         </div>
+
+        <!-- Control buttons (sound, skip, play/pause, like) -->
         <div class="controls">
           <button class="control-btn-sound">
             <img src="icons8-audio-30.png" alt="icons8-audio-30" />
@@ -70,6 +72,7 @@
         </div>
       </div>
 
+      <!-- Playlist section for song selection list -->
       <div class="playlist-container">
         <h2 class="list-title">Lofi 4 chill</h2>
         <ul class="song-list">
@@ -82,6 +85,7 @@
               Let Down - Radiohead (cover) - Jessica Adellene
             </button>
           </li>
+          THIS WAS FOR PRACTICING ONLY 
            -->
 
           <li class="song-item">
@@ -142,11 +146,11 @@
           </li>
         </ul>
 
-        <!-- 
-        data-src: URL or file path of your MP3
-        data-cover: URL to album image
-        data-title: Song title
-        data-artist: Artist name -->
+        <!-- Explanation of each data attribute used in songs above
+             data-src: MP3 file link
+             data-cover: Album cover image
+             data-title: Song name
+             data-artist: Artist's name -->
 
         <div class="Sliding-text">
           <marquee behavior="scroll" direction="left">
@@ -156,7 +160,9 @@
         </div>
       </div>
     </div>
+    <!-- Motivational scrolling message for late-night users -->
 
     <audio id="audio-player"></audio>
   </body>
+  <!-- Hidden audio element that actually plays the music -->
 </html>

@@ -8,6 +8,7 @@ body {
   font-family: "Arial", sans-serif;
 }
 
+/* For layout containers */
 .main-container {
   display: flex;
   flex-direction: row;
@@ -50,6 +51,7 @@ body {
   max-width: 350px;
 }
 
+/* typographhy */
 .playlist-name {
   font-style: italic;
   font-size: 17px;
@@ -84,6 +86,7 @@ body {
   margin-top: 4px;
 }
 
+/* Everything Album related */
 .album-art-container {
   width: 75%;
   max-width: 300px;
@@ -125,6 +128,7 @@ body {
   text-shadow: 0px 2px 20px rgba(228, 222, 217, 0.603);
 }
 
+/* Everything controls related */
 .controls {
   display: flex;
   justify-content: space-between;
@@ -161,6 +165,7 @@ body {
   margin-top: 20px;
 }
 
+/* Progress Bar, should learn it more */
 .progress-bar {
   background-color: rgba(255, 255, 255, 0.3);
   height: 8px;
@@ -186,6 +191,7 @@ body {
   width: 100%;
 }
 
+/* Playlist */
 .list-title {
   font-size: 24px;
   font-weight: bold;
