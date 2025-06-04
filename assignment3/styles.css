@@ -1,4 +1,4 @@
-/* style.css */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +11,12 @@ body {
   color: #f2f2f2;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3a0a5b; /* dark purple */
+  background-color: #3a0a5b;
   color: white;
   padding: 20px 40px;
   position: sticky;
@@ -28,70 +29,83 @@ header .logo {
   font-size: 1.5rem;
 }
 
+/* Navigation Buttons */
 .nav-buttons {
   display: flex;
   gap: 15px;
 }
 
-.nav-buttons button {
+.nav-buttons button,
+.button-link {
   background-color: transparent;
   color: white;
+  border: 2px solid #c084fc;
   padding: 8px 16px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
+  text-decoration: none;
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.nav-buttons button:hover {
+.nav-buttons button:hover,
+.button-link:hover {
   background-color: #c084fc;
   color: black;
   transform: scale(1.05);
 }
 
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 10%;
-  gap: 60px;
+/* Intro Section */
+.intro {
+  padding: 120px 10%;
+  text-align: center;
 }
 
-.hero-image img {
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-.hero-text {
-  max-width: 500px;
-}
-
-.hero-text h1 {
-  font-size: 2.5rem;
+.intro h1 {
+  font-size: 3rem;
+  color: #c084fc;
   margin-bottom: 20px;
-  color: #c084fc; /* soft purple */
 }
 
-.hero-text p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.intro p {
+  font-size: 1.3rem;
   color: #ddd;
 }
 
-.cta {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #c084fc;
-  color: black;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
+/* Projects Section */
+.projects {
+  padding: 100px 10%;
+  background-color: #120014;
 }
 
-.cta:hover {
-  background-color: #a855f7;
-  transform: scale(1.05);
+.projects h2 {
+  font-size: 2rem;
+  color: #c084fc;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-placeholder {
+  text-align: center;
+  padding: 60px;
+  border: 2px dashed #444;
+  border-radius: 10px;
+  color: #aaa;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #c084fc;
+  margin-bottom: 20px;
+}
+
+.contact p a {
+  color: #f2f2f2;
+  text-decoration: underline;
 }
