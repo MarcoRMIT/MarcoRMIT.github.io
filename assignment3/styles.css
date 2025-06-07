@@ -75,7 +75,6 @@ header .logo {
 /* Projects Section */
 .projects {
   padding: 100px 10%;
-  background-color: #120014;
 }
 
 .projects h2 {
@@ -94,18 +93,35 @@ header .logo {
 }
 
 /* Contact Section */
-.contact {
+#contact {
   padding: 80px 10%;
   text-align: center;
 }
 
-.contact h2 {
+#contact h2 {
   font-size: 2rem;
   color: #c084fc;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.contact p a {
-  color: #f2f2f2;
-  text-decoration: underline;
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.icon-button {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.icon-button img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon-button:hover img {
+  transform: scale(1.2);
 }
