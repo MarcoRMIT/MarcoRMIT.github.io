@@ -54,6 +54,8 @@ const projectImages = {
     ],
 };
 
+// I spent a whole day just trying to figure out how flipbooks Worker, I bit more than I could chew
+
 
 let currentImageIndexes = {};
 
@@ -87,17 +89,17 @@ function showImage(flipbookId, index) {
     const images = projectImages[flipbookId];
 
     if (flipbookImageElement && images && images.length > 0) {
-        flipbookImageElement.style.opacity = '0'; // Start fade out
+        flipbookImageElement.style.opacity = '0'; // Satrt fade out
         setTimeout(() => {
             flipbookImageElement.src = images[index];
-            flipbookImageElement.style.opacity = '1'; // Fade in
+            flipbookImageElement.style.opacity = '1'; // Fade 
         }, 100);
     } else {
         console.warn(`Images not defined for flipbook ID '${flipbookId}' or image element not found.`);
     }
 }
 
-// Function to go to the next image for a specific flipbook
+// go tonext image for a specific flipbook
 function nextImage(flipbookId) {
     const images = projectImages[flipbookId];
     if (!images || images.length === 0) return;
@@ -106,7 +108,7 @@ function nextImage(flipbookId) {
     showImage(flipbookId, currentImageIndexes[flipbookId]);
 }
 
-// Function to go to the previous image for a specific flipbook
+// to previous image for a specific flipbook
 function prevImage(flipbookId) {
     const images = projectImages[flipbookId];
     if (!images || images.length === 0) return;
