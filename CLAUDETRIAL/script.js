@@ -52,20 +52,6 @@ const projectImages = {
         "POSEMUDIKDESERT1.png",
         "MUDIKSKETCH.jpeg",
     ],
-
-    'flipbook-UWALKGOOFY-1': [
-
-
-
-    ], 
-
-    'flipbook-UWALKMODERN-1' :[
-
-
-    ],
-
-
-
 };
 
 
