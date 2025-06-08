@@ -7,9 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #1a001a, #000000);
   color: #f2f2f2;
-  scroll-behavior: smooth;
 }
 
 /* Header Section */
@@ -42,8 +40,11 @@ header {
 }
 
 .intro-text h1 {
-  font-size: 3rem;
-  color: #ff7f30;
+  font-size: 4.5rem;
+  background: linear-gradient(45deg, #ff7f30, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 10px;
 }
 
@@ -86,19 +87,173 @@ header {
 }
 
 .projects h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-style: italic;
   color: #ff7f30;
   margin-bottom: 30px;
   text-align: center;
 }
 
 .project-placeholder {
-  text-align: center;
-  padding: 60px;
-  border: 2px dashed #444;
-  border-radius: 10px;
+text-align: justify; 
+ padding: 60px;
+  border-radius:50px;
   color: #aaa;
 }
+
+
+/* Video Styling */
+.main-screen {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#my-video {
+  width: 100%;
+  max-width: 480px;  /* Was 1080px — now significantly smaller */
+  aspect-ratio: 1 / 1; /* Ensures it's 1080x1080 proportionally */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Project Layout */
+.project-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  flex: 1;
+}
+
+/* Flip Cards */
+.flip-card {
+  background: transparent;
+  perspective: 1000px;
+  width: 150px;
+  height: 150px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.flip-card-back {
+  background-color: #2e003f;
+  transform: rotateY(180deg);
+}
+
+/* Paragraph */
+.project-description {
+  flex: 1;
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Project Section Layout */
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+/* Video Styling */
+.project-video video {
+  width: 320px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+/* Info Side */
+.project-info {
+  flex: 1;
+  max-width: 500px;
+}
+
+/* Flipbook */
+.flipbook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.flipbook img {
+  width: 100%;
+  max-height: 320px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.flip-controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.flip-controls button {
+  background-color: #c084fc;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.flip-controls button:hover {
+  background-color: #a855f7;
+}
+
+/* Project Description */
+.project-description p {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
 
 /* Contact Section */
 .contact {

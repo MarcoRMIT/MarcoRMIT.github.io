@@ -1,0 +1,407 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #f2f2f2;
+  background-color: #120014; /* Ensuring a consistent background for the body */
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10%;
+  background-color: #0e0e0e;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo img {
+  height: 140px;
+  width: auto;
+  object-fit: contain;
+}
+
+.intro-text {
+  flex: 1;
+  text-align: left;
+}
+
+.intro-text h1 {
+  font-size: 4.5rem;
+  background: linear-gradient(45deg, #ff7f30, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-buttons button,
+.button-link {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #c084fc;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-buttons button:hover,
+.button-link:hover {
+  background-color: #c084fc;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Projects Section */
+.project-section {
+  padding: 100px 10%;
+  background-color: #120014;
+}
+
+.project-section h2 {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ff7f30;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-placeholder {
+  text-align: center;
+  padding: 60px;
+  border-radius: 50px;
+  color: #aaa;
+  background-color: #2e003f;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Project Container - Layout for overall project section */
+.project-container {
+  display: flex;
+  flex-direction: column; /* Stacks media-row and description-text vertically */
+  gap: 40px; /* Space between the media row and the description */
+  justify-content: center;
+  align-items: center; /* Centers items horizontally within the container */
+  margin-top: 40px;
+}
+
+/* NEW: Wrapper for video and flipbook to be side-by-side */
+.media-row {
+  display: flex; /* Makes children (video and flipbook) go side-by-side */
+  gap: 10px; /* Reduced gap between video and flipbook */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center; /* Centers them when they wrap or have extra space */
+  align-items: flex-start; /* Aligns them to the top of the row if their heights differ */
+  width: 100%; /* Take full width of parent */
+}
+
+/* Video Styling */
+.project-video video {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+  object-fit: cover;
+}
+
+
+
+/* Image Flipbook */
+.image-flipbook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-flipbook img {
+  width: 500px; /* Set to the same width as the video */
+  height: 500px; /* Set to the same height as the video */
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Flipbook Controls */
+.flipbook-controls {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.flipbook-controls button {
+  background-color: #c084fc;
+  color: black;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.flipbook-controls button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: invert(1);
+  box-shadow: none;
+}
+
+.flipbook-controls button:hover {
+  background-color: #a855f7;
+  transform: scale(1.1);
+}
+
+.flipbook-controls button:active {
+  transform: scale(0.95);
+}
+
+/* Description Text - Styled as a justified box */
+.description-text {
+  margin-top: 20px;
+  background-color: #2e003f; /* Dark purple background */
+  padding: 25px; /* Add some padding inside the box */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  /* Max width to match the combined width of video + flipbook + reduced gap */
+  max-width: 1010px; /* (500px + 500px + 10px gap) */
+  width: 100%; /* Ensures it takes up available width up to max-width */
+}
+
+.description-text p {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.6;
+  text-align: justify; /* Justify the text */
+}
+
+
+/* --- General/Potentially Redundant CSS (Kept for completeness but consider if needed) --- */
+/* Video Styling (Re-check if this is still needed as .project-video video handles most cases) */
+.main-screen {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#my-video { /* If you have a specific video with this ID, keep it. Otherwise, can remove. */
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Project Layout (General for dynamic layouts - keep if you plan to use this for other layouts) */
+.project-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Image Gallery (Keep if you plan to use this for other project types) */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  flex: 1;
+}
+
+/* Flip Cards (Keep if you plan to use this for other project types) */
+.flip-card {
+  background: transparent;
+  perspective: 1000px;
+  width: 150px;
+  height: 150px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.flip-card-back {
+  background-color: #2e003f;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Info Side (For a side column of information - keep if you plan to use this) */
+.project-info {
+  flex: 1;
+  max-width: 500px;
+}
+
+/* Flipbook (General for image flipbooks - this is a generic class, keep if used elsewhere) */
+.flipbook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.flipbook img {
+  width: 100%;
+  max-height: 320px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.flip-controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.flip-controls button {
+  background-color: #c084fc;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.flip-controls button:hover {
+  background-color: #a855f7;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 10%;
+  text-align: center;
+  background-color: #0e0e0e;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: #ff7f30;
+  margin-bottom: 30px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.icon-button img {
+  height: 40px;
+  width: 40px;
+  transition: transform 0.3s;
+}
+
+.icon-button img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) { /* Stacks video and flipbook vertically */
+  .media-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .project-container settings are handled by the main .project-container rule */
+
+  .project-video video,
+  .image-flipbook img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .intro-text h1 {
+    font-size: 3rem;
+  }
+
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-placeholder {
+    padding: 30px;
+    font-size: 0.9rem;
+  }
+
+  /* Ensure the description text container adapts on smaller screens */
+  .description-text {
+    max-width: 560px; /* Roughly 2 * 280px */
+  }
+}
