@@ -99,6 +99,23 @@ function showImage(flipbookId, index) {
     }
 }
 
+function autoRotateImages() {
+  setInterval(() => {
+    for (const flipbookId in projectImages) {
+      nextImage(flipbookId);
+    }
+  }, 6000); // every 6 seconds
+}
+document.addEventListener('DOMContentLoaded', () => {
+  initializeFlipbooks();
+  autoRotateImages();
+});
+
+
+
+
+
+
 // go tonext image for a specific flipbook
 function nextImage(flipbookId) {
     const images = projectImages[flipbookId];
