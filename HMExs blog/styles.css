@@ -37,11 +37,19 @@ h3 {
   text-align: left;
   margin-bottom: 1rem;
   font-style: italic
- 
+}
 
+h2 {
+ margin-bottom: 1rem;
 
 }
 
+h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+
+}
 
 /* Section Header */
 h1 {
