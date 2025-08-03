@@ -33,7 +33,14 @@ p {
   text-align: justify;
 }
 
+h3 {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-style: italic
+ 
 
+
+}
 
 
 /* Section Header */
