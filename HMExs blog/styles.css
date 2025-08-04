@@ -39,17 +39,21 @@ h3 {
   font-style: italic
 }
 
-h2 {
- margin-bottom: 1rem;
 
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   font-style: italic;
 
 }
+
+
 
 /* Section Header */
 h1 {
