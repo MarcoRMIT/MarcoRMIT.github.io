@@ -243,12 +243,13 @@ ul li {
 .bibliography-card li::before{ content:"• "; color:#8a2be2; }
 
 
-
-
-
 .card-grid .bibliography-card{
   grid-column: 1 / -1;   /* spans both columns */
 }
+
+
+
+
 
 
 
