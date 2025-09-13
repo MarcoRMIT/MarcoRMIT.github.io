@@ -36,10 +36,20 @@ body {
   background: linear-gradient(to right, #8a2be2, #3c8dbc);
   -webkit-background-clip: text;
   color: transparent;
-
-
-
 }
+
+
+
+.blog-card h2 {
+  margin-bottom: .75rem;
+  background: linear-gradient(to right, #8a2be2, #3c8dbc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.blog-card h4 { margin-top: 1.25rem; }
+.blog-card p + h4 { margin-top: 1.75rem; } /* adds breathing room before subheads */
+
+
 
 .blog-card h4 {
   font-style: italic;
@@ -227,6 +237,22 @@ ul li {
 
 }
 
+
+a, li {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.blog-card ul, .bibliography-card ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+.blog-card li + li,
+.bibliography-card li + li {
+  margin-top: .4rem;
+}
+
+
+
 .blog-card img {
   max-width: 100%;   /* keeps it within the card width */
   height: auto;      /* maintains aspect ratio */
@@ -257,6 +283,7 @@ ul li {
 
 
 
+.bibliography-card h3 { font-size: 1.6rem; margin-bottom: 1rem; color: #f5f5f5; }
 
 
 
