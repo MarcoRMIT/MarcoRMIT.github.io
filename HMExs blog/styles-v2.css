@@ -74,15 +74,12 @@ body {
 
 
 .blog-card video {
-  width: 100%;           /* makes video fit the card width */
-  max-width: 800px;      /* keeps it from getting too big */
-  height: auto;          /* maintains aspect ratio */
-  border-radius: 10px;   /* matches your card style */
-  margin: 1rem auto;        /* spacing above & below */
-  display: block;        /* removes inline weirdness */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* tidy shadow like images */
+  display: block;
+  margin: 1.5rem auto;   /* centers the video */
+  max-width: 80%;        /* keeps video neat */
+  border-radius: 10px;   /* smooth rounded corners */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); /* matches cards */
 }
-
 
 
 
