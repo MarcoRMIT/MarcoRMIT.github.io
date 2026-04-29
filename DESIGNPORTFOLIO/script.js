@@ -1,6 +1,10 @@
 // script.js
-document.querySelectorAll(".icon-button").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    console.log("Social icon clicked!"); // For debugging or analytics
+
+const socialButtons = document.querySelectorAll(".icon-button");
+
+socialButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const label = button.getAttribute("aria-label") || "Social link";
+    console.log(`${label} clicked`);
   });
 });

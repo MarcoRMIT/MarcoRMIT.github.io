@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Design Portfolio</title>
+    <title>DIGIMarc | Design Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
+
   <body>
-    <header>
+    <header id="home">
       <div class="header-content">
-        <img src="leftsideskull.png" alt="Logo" class="logo" />
+        <img src="leftsideskull.png" alt="DIGIMarc logo" class="logo" />
+
         <div class="intro-text">
           <h1>DIGIMarc</h1>
           <p>3D Generalist | UX Designer | Product Visualiser</p>
-          <nav>
+
+          <nav aria-label="Main navigation">
             <ul>
-              <li><a href="#work">Home</a></li>
-              <li><a href="#about">Work</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -25,90 +29,108 @@
       </div>
     </header>
 
-    <section id="work">
-      <h2>Selected Projects</h2>
-      <div class="project-grid">
-        <!-- Project cards -->
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="Project thumbnail" />
-          <h3>test 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            corporis iusto optio dicta cupiditate inventore, ratione autem cum
-            harum earum!
-          </p>
+    <main>
+      <section id="work">
+        <h2>Selected Projects</h2>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Thumbnail for project test 1"
+            />
+            <h3>Test 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              corporis iusto optio dicta cupiditate inventore, ratione autem cum
+              harum earum!
+            </p>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Thumbnail for project test 2"
+            />
+            <h3>Test 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              corporis iusto optio dicta cupiditate inventore, ratione autem cum
+              harum earum!
+            </p>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Thumbnail for project test 3"
+            />
+            <h3>Test 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              corporis iusto optio dicta cupiditate inventore, ratione autem cum
+              harum earum!
+            </p>
+          </article>
         </div>
-        <!-- Add more project cards -->
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="Project thumbnail" />
-          <h3>test 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            corporis iusto optio dicta cupiditate inventore, ratione autem cum
-            harum earum!
-          </p>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a digital designer specialising in 3D modelling and UX. I create
+          3D assets, prototypes, iOS applications, and interface mockups for
+          digital and physical products. I combine visual design and
+          user-centred thinking to deliver engaging, functional experiences. I
+          am interested in product design, interactive media, and emerging
+          technologies.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Let's Connect!</h2>
+
+        <div class="icon-container">
+          <a
+            href="https://www.instagram.com/digitalmarc_/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icon-button"
+            aria-label="Visit my Instagram profile"
+          >
+            <img src="instaicon.png" alt="Instagram icon" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/marco-sihombing-8b12a4289"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icon-button"
+            aria-label="Visit my LinkedIn profile"
+          >
+            <img src="linkedin-logo.png" alt="LinkedIn icon" />
+          </a>
+
+          <a
+            href="https://drive.google.com/drive/folders/1-SY9PJKRtUcRG209PiY5O-jtWgyNlu-b?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icon-button"
+            aria-label="View my Google Drive portfolio folder"
+          >
+            <img src="googledrive.png" alt="Google Drive icon" />
+          </a>
+
+          <a
+            href="mailto:marco.reinhard2@gmail.com"
+            class="icon-button"
+            aria-label="Send me an email"
+          >
+            <img src="outlook.png" alt="Email icon" />
+          </a>
         </div>
-
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300" alt="Project thumbnail" />
-          <h3>test 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            corporis iusto optio dicta cupiditate inventore, ratione autem cum
-            harum earum!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Digital Design student at RMIT University, currently pursuing a
-        Bachelor’s degree in Digital Media. With experience across multiple
-        forms of media, I have developed strong adaptability skills for new
-        technologies. I specialize in 3D design and UX, focusing on creating
-        mockups and wireframes for 3D models, assets, and both physical and
-        digital products :P
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Let's Connect!</h2>
-      <div class="icon-container">
-        <a
-          href="https://www.instagram.com/digitalmarc_/?hl=en"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="icon-button"
-        >
-          <img src="instaicon.png" alt="instagram" />
-          <!-- <img src="images/instaicon.png" alt="Instagram" /> -->
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/marco-j-8b12a4289/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="icon-button"
-        >
-          <img src="linkedin-logo.png" alt="linkedIn" />
-        </a>
-
-        <a
-          href="https://drive.google.com/drive/folders/1-SY9PJKRtUcRG209PiY5O-jtWgyNlu-b?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="icon-button"
-        >
-          <img src="googledrive.png" alt="googledrive" />
-        </a>
-
-        <a href="mailto:marco.reinhard2@gmail.com" class="icon-button">
-          <img src="outlook.png" alt="outlook" />
-        </a>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
       <p>© 2025 @Digitalmarc_. All rights reserved.</p>
